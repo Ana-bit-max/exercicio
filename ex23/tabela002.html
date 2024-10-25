@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table {
+            
+           width: 500px;
+           border-collapse: collapse;
+           position: relative;
+
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+            tfoot{
+            background-color: gray;
+            color: white;
+        }
+        thead> tr> th{
+            position: sticky;
+            top: 0px;
+            background-color: gray;
+           
+
+        }
+        tbody >tr:nth-child(odd){
+            background-color: rgb(209, 193, 193);
+        }
+
+        th.num{
+            text-align: right;
+        }
+        caption{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: rgb(32, 29, 29);
+            padding: 10px;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes </h1>
+
+<!--ANATOMIA PARA TABELAS GRANDES
+CAPITON
+TABLE
+    THEAD   
+    TR,TD,TH
+    TBODY
+    TR,TD,TH
+    TFOOT
+    TR,TD,TH
+    -->   
+    <table>
+        <caption>
+        População das unidades federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <th>São Paulo</th>
+                <th class="num">45 973 190	</th>
+            </tr>
+            <tr>
+                <th>Minas Gerais</th>
+                 <th class="num">45 973 190	</th>
+            </tr>
+            <tr>
+                <th>Rio de Janeiro</th>
+                <th class="num">17 219 679</th>
+            </tr>
+           
+
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>;
+            <th class="num"><strong>109.166.059</strong></th>;
+
+        </tfoot>
+    </table>
+    <p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat necessitatibus aspernatur voluptates odit at eveniet. Possimus, id nobis? Excepturi assumenda ipsam magnam deleniti autem praesentium commodi recusandae explicabo possimus? Iure.</p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore et consequatur natus atque ut repudiandae placeat eligendi. Autem beatae alias, praesentium repellat iusto nulla aut amet deleniti aperiam cum atque?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias reprehenderit consequuntur iure quidem asperiores temporibus laudantium, voluptates sunt tempora dolorum qui. Iusto tempore eum quos. Quis minus delectus minima possimus.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus vero, sapiente explicabo error dolores minima autem repellendus animi, quidem quam possimus adipisci ullam. Iste sit ut quos voluptates praesentium ab.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis et porro repudiandae, sit facilis excepturi? Est aperiam, ullam maxime aliquid exercitationem asperiores eveniet veritatis obcaecati vitae officia officiis magni.</p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iure incidunt iste repudiandae. Laboriosam, cumque illum. Porro illum nostrum quae molestiae culpa delectus voluptatum in. Magnam, alias est! Repellendus, inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, eos quia? Repellendus temporibus sit eveniet at voluptate voluptas delectus ut vero aliquam. Ex omnis cumque aspernatur veniam corporis voluptatem quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo reprehenderit quasi eaque, velit quisquam inventore id nobis quae nisi dolorem esse enim est vel blanditiis voluptatem harum hic eveniet <molestiae class="lorem"></molestiae>
+
+
+    </body>
+</html>
+ 
